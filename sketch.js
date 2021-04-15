@@ -19,7 +19,7 @@ function preload()
 function setup() {
 	createCanvas(800, 750);
 
-	 fairyVoice.play();
+	// fairyVoice.play();
 
 	fairy = createSprite(130, 520);
 	fairy.addAnimation("fairyflying",fairyImg);  
@@ -45,13 +45,12 @@ function draw() {
 
   keyPressed();
 
-  if(keyDown("down")){
-	Matter.Body.setStatic(starBody, false);
-  }
+  //if(keyDown("down")){
+	//Matter.Body.setStatic(starBody, false);
+  //}
 
-  if(star.body.y>470){
-	  star.body.x= fairy.positiom.x  };
-
+  star.y= starBody.position.y
+  star.x=starBody.position.x;
   drawSprites();
 
 }
