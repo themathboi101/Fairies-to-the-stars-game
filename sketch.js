@@ -45,12 +45,12 @@ function draw() {
 
   keyPressed();
 
-  //if(keyDown("down")){
-	//Matter.Body.setStatic(starBody, false);
-  //}
+  if(keyDown("down")){
+Matter.Body.setStatic(starBody, false);
+}
 
-  star.y= starBody.position.y
-  star.x=starBody.position.x;
+	star.y= starBody.position.y
+	star.x=starBody.position.x;
   drawSprites();
 
 }
